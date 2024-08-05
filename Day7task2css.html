@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display:inline-block;
+            background-color: lightgreen;
+        }
+        .container{
+           display: none;
+        }
+        .main1{
+            border:solid 4px black;
+            height: 100px;
+            width:200px;
+            background-color: aqua;
+        }
+        .main2{
+            border:solid 4px black;
+            height: 100px;
+            width:200px;
+            background-color: green;
+            
+        }
+        .main3{
+            border:solid 4px black;
+            height: 100px;
+            width:200px;
+            background-color: blueviolet;
+        }
+        .main4{
+            border:solid 4px black;
+            height: 100px;
+            width:200px;
+            background-color: blue;
+           
+        }
+        .paragraph{
+            display:none;
+            background-color:rgb(132, 132, 221);
+        }
+        button:focus~.container{
+            display: block;
+        }
+       button:focus~.paragraph{
+            display: block;
+       }
+       p::first-letter{
+        color:red;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    <button>CLick Here</button>
+        <div class="container"> 
+            <div class="main1">Box1</div>
+            <div class="main2">Box2</div>
+            <div class="main3">Box3</div>
+            <div class="main4">Box3</div>
+        </div>
+    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius facilis facere illum dolore nemo nobis sunt, nam in hic animi, ad accusantium, exercitationem voluptatibus! Aliquam inventore fugit aperiam vitae quis.</p>
+    </div>
+</body>
+</html>
