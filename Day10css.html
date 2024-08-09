@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display:grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border:2px solid black;
+            height:98vh;
+            width:70vw;
+            gap: 10px 10px;
+            background: rgb(46, 46, 99);
+        }
+        .grid-items1{
+            border:2px solid white;
+            color:white;
+            grid-column: 1/2;
+            grid-row: 1/4;
+            background-color: green;
+        }
+        .grid-items2{
+            border:2px solid white;
+            color:white;
+            grid-column:2/4;
+            grid-row:1/2;
+            background-color: green;
+        }
+        .grid-items3{
+            border:2px solid white;
+            color:white;
+            grid-column: 4/5;
+            grid-row: 1/2;
+            background-color: red;
+        }
+        .grid-items4{
+            border:2px solid white;
+            color:white;
+            grid-column:2/3;
+            grid-row:2/3;
+            background-color: orange;
+        }
+        .grid-items5{
+            border:2px solid white;
+            color:white;
+            grid-column:3/4;
+            grid-row: 2/3;
+            background-color: red;
+        }
+        .grid-items6{
+            border:2px solid white;
+            color:white;
+            grid-column:4/5;
+            grid-row: 2/4;
+            background-color: green;
+        }
+        .grid-items7{
+            border:2px solid white;
+            color:white;
+            grid-column:2/3;
+            grid-row:3/4;
+            background-color: red;
+        }
+        .grid-items8{
+            border:2px solid white;
+            color:white;
+            grid-column:3/4;
+            grid-row:3/4;
+            background-color: orange;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-items1">1</div>
+        <div class="grid-items2">2</div>
+        <div class="grid-items3">3</div>
+        <div class="grid-items4">4</div>
+        <div class="grid-items5">5</div>
+        <div class="grid-items6">6</div>
+        <div class="grid-items7">7</div>
+        <div class="grid-items8">8</div>
+       
+    </div>
+</body>   
+</html>

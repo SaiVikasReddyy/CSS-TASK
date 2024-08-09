@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            width: 98vw;
+            height: 40px;
+            align-items: center;
+            background-color: white;
+            padding: 7px;
+            position: fixed;
+            margin-top: none;
+        }
+        .navbar a{
+            margin:10px;
+            text-decoration: none;
+            color: black;
+            letter-spacing: 3px;
+            padding: 8px;
+        }
+        a:hover{
+            background-color: gray;
+        }
+
+        .container{
+            height: 100vh;
+            width: 99vw;
+            background-image: url("hamburger.jpg");
+            margin: auto;
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: 3px;
+        }
+        .main2{
+            width: 450px;
+            height: 570px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        .main{
+            display: flex;
+            column-gap: 20px;
+        }
+        .container2,.container3{
+            width: 98vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            align-items: center;
+        }
+        
+        .main3{
+            display:flex;
+            column-gap: 40px;
+
+        }
+        .main4{
+          line-height: 27px;
+          width: 580px;
+          height: 90vh;
+        }
+        .main5{
+            height: 600px;
+            width: 400px;
+        }
+        .main6{
+            width:980px;
+        }
+        .main6 input{
+           border-top: none;
+           border-right: none;
+           border-left: none;
+           height: 45px;
+           width: 100%;
+        }
+        .container3{
+            height: 400px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div>
+            <a href="">Gourmet au Catering</a>
+        </div>
+
+        <div>
+            <a href="">About</a>
+            <a href="">Menu</a>
+            <a href="">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h1 style="margin-left: 20px; color: rgb(78, 75, 75);">Le Catering</h1>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="main">
+            <div class="">
+                <img style="height: 90vh;border-radius: 5px;" src="tablesetting2.jpg" alt="">
+            </div>
+    
+            <div class="main2">
+                <h2 style="text-align: center;">About Catering</h2>
+                <br>
+                <p style="text-align: center; letter-spacing: 3px;">Tradition since 1889</p>
+            
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                
+                <p style="color: gray;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="main3">
+            <div style="margin-left: 20px;" class="main4">
+                <h2 style="text-align: center;letter-spacing: 2px;">Our Menu</h2>
+                <p><b style="letter-spacing:2px;">Bread Basket</b><br><br><span style="color:grey">Assortment of fresh baked fruit breads and muffins 5.50</span></p>
+                <p><b style="letter-spacing: 2px;">Honey Almond Granola with Fruits</b><br><br><span style="color:grey;">natural cereal of honey toasted oats, raisins, almonds and dates 7.00</span></p>
+                <p><b style="letter-spacing: 2px;">Belgian Waffle</b><br><br><span style="color:grey">Vanilla flavored batter with malted flour 7.50</span></p>
+                <p><b style="letter-spacing: 2px;">Scrambled eggs</b><br><br><span style="color:grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</span></p>
+                <p><b style="letter-spacing: 2px;">Blueberry Pancakes</b><br><br><span style="color:grey">With syrup, butter and lots of berries 8.50</span></p>
+            </div>
+            <div class="main5">
+                <img height="400px" style="height:650px; width:440px;border-radius: 5px;" src="tablesetting1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="main6">
+        <h2 style="letter-spacing:2px;">Contact</h2><br>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+         Do not hesitate to contact us.</p>
+        <h3 style="color:rgb(73, 93, 106)">Catering Service, 42nd Living St, 43043 New York, NY</h3>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <label for="name"></label>
+        <input type="text" placeholder="Name" id="name"><br>
+        <label for="people"></label>
+        <input type="text" placeholder="How Many People" id="people"><br>
+        <label for="d&t"></label>
+        <input type="datetime-local" id="d&t" ><br>
+        <label for="message"></label>
+        <input type="text" placeholder="message \ Special requirements" id="message"><br><br>
+        <BUtton>SEND MESSAGE</BUtton>
+        </div>
+    </div>
+</body>
+</html>
